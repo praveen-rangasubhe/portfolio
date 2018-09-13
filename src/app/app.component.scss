@@ -1,0 +1,184 @@
+//Variable
+ $primary:#444444;
+
+.top-container{
+.navbar{background-color: #f0f0f0;  padding: 15px 0 15px 0;z-index: 4;
+      .lion{width: 7%}
+        .bdna_brand {padding-left: 15px;
+          .fas {
+            font-size: 80px;
+            padding-left: 8px;
+            color: #444444;
+            display: inline-block;
+            width: 140px;
+            height: 134px;
+            border-radius: 0;
+            line-height: 125px;
+            text-align: center;
+            box-shadow: 4px 7px 8px 7px #d8d8d8;
+          }
+          }
+         h1 {
+           font-size: 19px;
+           padding: 0 0 0 0px;
+           line-height: 36px;
+           font-weight: 900;
+           text-align: center;
+            a{text-decoration: none; color: #3c3c3c}
+        }
+        .social_icons {
+          text-align: right;
+          margin: 0 11px 2px 75px;
+            .fab {
+                padding: 0 2px 0 15px;
+                font-size: 33px;
+                cursor: pointer;
+                display: inline;
+                &:hover{color:rgb(245, 146, 17)}
+            }
+        }
+    }
+}
+.header {
+    padding: 10px 16px;
+    background: #444444;
+    color: #f1f1f1;
+    z-index: 4;
+  .list-inline {
+     margin:0px;
+  .list-inline-item{
+    button {
+    background-color: transparent;
+    border: 0;
+      color: #ffff;
+    cursor: pointer;
+      text-transform: uppercase;
+      &:hover{cursor: pointer !important;}
+  }
+  }
+  .list-inline-item:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+.header_section{z-index: 4}
+
+//dynamic css control
+::ng-deep .mat-menu-panel{margin: 37px 0px 0px 0px}
+
+
+.padding0{padding: 0px}
+
+
+
+
+.main_section {
+  margin: 0px 0 0 0;
+  background-color: #ccc;
+  padding: 35px 0 0 0;
+  .card {
+    max-width: 100%;
+  }
+
+  .card-image {
+    background-size: cover;
+    background: #dedede;
+    text-align: center;
+    line-height: 42px;
+    cursor: pointer;
+    &:hover{background-color:#004D40; color: #fff;}
+  }
+
+  .mat-card-avatar {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    .fas {
+      font-weight: 900;
+      font-size: 64px;
+      line-height: 121px;
+    }
+
+  }
+  .mat-card-image {
+    margin: 28px -24px 16px -24px;
+  }
+  .mat-card-title {
+    font-size: 18px;
+    text-align: left;
+    margin-top: 30px;
+  }
+}
+
+.help {
+  margin: 15px 0 10px 0;
+  min-height: 600px;
+  box-shadow: 4px 2px 21px #cccc;
+ .left{
+   background-color: #fff; min-height: 800px;
+ h1{    background-color: #444444;
+   color: #fff;
+   font-size: 20px;
+   text-align: center;
+   line-height: 32px;
+ &:hover{background-color: #33691E}}
+
+   span {
+     display: inline-block;
+     padding: 0 0 0 15px;
+ }
+
+   .enquiry {
+     margin: 0 0 8px 0;
+   }
+ //::ng-deep  .mat-chip-list-wrapper {
+ //    margin: 1px 0 5px 0;
+ //  }
+   .menu {
+     padding: 5px 18px 5px 18px;
+
+   }
+   .member {
+     padding: 5px 18px 14px 18px;
+   }
+.mat-standard-chip {
+
+     display: inline-block;
+     width: 100%;
+     cursor: pointer;
+   }
+  h4 {
+     text-align: center;
+     display: inline-block;
+     width: 100%;
+     margin-top: 40px;
+     font-size: 18px;
+   }
+ }
+  marquee{background-color: #444444;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    line-height: 32px;
+    &:hover{background-color: #33691E}}
+ .right{background-color:#fff; min-height: 800px;
+   .detail {
+     padding: 0 21px 0 22px;
+     text-align: justify;
+     font-size: 16px;
+     color: #000000;
+     line-height: 24px;
+   }
+
+ }
+
+}
+.page-footer{background-color:#444444; color: #fff;}
+.padding_right0{padding-right: 0px}
