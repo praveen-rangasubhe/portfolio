@@ -1,30 +1,33 @@
 //Variable
- $primary:#444444;
+ $primary:#7CB342;
 
 .top-container{
-.navbar{background-color: #f0f0f0;  padding: 15px 0 15px 0;z-index: 4;
+.navbar{background-color: #fff;  z-index: 4;
       .lion{width: 7%}
         .bdna_brand {padding-left: 15px;
           .fas {
-            font-size: 80px;
+            font-size: 50px;
             padding-left: 8px;
-            color: #444444;
+            color: #06b306fa;
             display: inline-block;
-            width: 140px;
-            height: 134px;
-            border-radius: 0;
-            line-height: 125px;
+            width: 100px;
+            height: 100px;
+            line-height: 91px;
             text-align: center;
-            box-shadow: 4px 7px 8px 7px #d8d8d8;
+            border: 5px solid #a0a2a4;
+            padding: 0px;
+            background: #fff;
+            border-radius: 50%;
+
           }
           }
          h1 {
            font-size: 19px;
-           padding: 0 0 0 0px;
-           line-height: 36px;
+           padding: 0 0 0 22px;
+           line-height: 28px;
            font-weight: 900;
            text-align: center;
-            a{text-decoration: none; color: #3c3c3c}
+           a{color: #333;text-decoration: none;}
         }
         .social_icons {
           text-align: right;
@@ -37,35 +40,49 @@
                 &:hover{color:rgb(245, 146, 17)}
             }
         }
+  .right_sec {
+    display: inline-block;
+    max-width: 295px;
+    vertical-align: top;
+    margin: 0 0 41px 0;
+    .lang {
+      vertical-align: top;
+      text-align: right;
+      margin: 0px 73px 0px 0px;
+      line-height: 39px;
+    }}
     }
 }
 .header {
-    padding: 10px 16px;
-    background: #444444;
+    //padding: 10px 16px;
+  //height: 40px;
+    background: $primary;
     color: #f1f1f1;
-    z-index: 4;
+    z-index: 9;
   .list-inline {
-     margin:0px;
+    margin-left: 75px;    margin-bottom: 0px;
   .list-inline-item{
     button {
     background-color: transparent;
-    border: 0;
-      color: #ffff;
+    border: 0;    font-size: 15px;
+      color: #fff;line-height: 38px;
     cursor: pointer;
       text-transform: uppercase;
-      &:hover{cursor: pointer !important;}
+      &:hover{cursor: pointer !important;
+      background-color: #fff; color: #333!important;
+      }
   }
   }
   .list-inline-item:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 38px;
   }
 }
 }
-
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
+  z-index: 99;
   }
 .header_section{z-index: 4}
 
@@ -80,8 +97,8 @@
 
 .main_section {
   margin: 0px 0 0 0;
-  background-color: #ccc;
-  padding: 35px 0 0 0;
+  background-color: #f0f0f0;
+  padding: 35px 0 15px 0;
   .card {
     max-width: 100%;
   }
@@ -111,9 +128,10 @@
     margin: 28px -24px 16px -24px;
   }
   .mat-card-title {
-    font-size: 18px;
+    font-size: 14px;
     text-align: left;
     margin-top: 30px;
+    font-weight: 600;
   }
 }
 
@@ -128,7 +146,7 @@
    font-size: 20px;
    text-align: center;
    line-height: 32px;
- &:hover{background-color: #33691E}}
+}
 
    span {
      display: inline-block;
@@ -167,7 +185,7 @@
     font-size: 15px;
     text-align: center;
     line-height: 32px;
-    &:hover{background-color: #33691E}}
+  }
  .right{background-color:#fff; min-height: 800px;
    .detail {
      padding: 0 21px 0 22px;
@@ -180,5 +198,5 @@
  }
 
 }
-.page-footer{background-color:#444444; color: #fff;}
+.page-footer{background-color:$primary; color: #fff;}
 .padding_right0{padding-right: 0px}
