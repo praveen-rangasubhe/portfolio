@@ -1,9 +1,9 @@
 //Variable
- $primary:#7CB342;
+ $primary:#444444;
 
 .top-container{
-.navbar{background-color: #fff;  z-index: 4;
-      .lion{width: 7%}
+.navbar{background-color: #f0f0f0;  padding: 15px 0 15px 0;z-index: 4;
+
         .bdna_brand {padding-left: 15px;
           .fas {
             font-size: 50px;
@@ -16,7 +16,6 @@
             text-align: center;
             border: 5px solid #a0a2a4;
             padding: 0px;
-            background: #fff;
             border-radius: 50%;
 
           }
@@ -31,7 +30,7 @@
         }
         .social_icons {
           text-align: right;
-          margin: 0 11px 2px 75px;
+
             .fab {
                 padding: 0 2px 0 15px;
                 font-size: 33px;
@@ -48,7 +47,7 @@
     .lang {
       vertical-align: top;
       text-align: right;
-      margin: 0px 73px 0px 0px;
+      margin: 0px 3px 0px 0px;
       line-height: 39px;
     }}
     }
@@ -132,15 +131,17 @@
     text-align: left;
     margin-top: 30px;
     font-weight: 600;
+    word-spacing: -2px;
+    letter-spacing: 0.5px;
   }
 }
 
 .help {
   margin: 15px 0 10px 0;
   min-height: 600px;
-  box-shadow: 4px 2px 21px #cccc;
+  //box-shadow: 4px 2px 21px #cccc;
  .left{
-   background-color: #fff; min-height: 800px;
+   background-color: #fff; min-height: 800px;  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
  h1{    background-color: #444444;
    color: #fff;
    font-size: 20px;
@@ -186,7 +187,7 @@
     text-align: center;
     line-height: 32px;
   }
- .right{background-color:#fff; min-height: 800px;
+ .right{background-color:#fff; min-height: 800px;  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
    .detail {
      padding: 0 21px 0 22px;
      text-align: justify;
@@ -198,5 +199,5 @@
  }
 
 }
-.page-footer{background-color:$primary; color: #fff;}
+
 .padding_right0{padding-right: 0px}

@@ -8,9 +8,12 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatCardModule} from '@angular/material/card';
 import {MatChipsModule} from '@angular/material/chips';
+import { AppRoutingModule } from './/app-routing.module';
+import { GlobalComponent } from './global/global.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GlobalComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +22,8 @@ import {MatChipsModule} from '@angular/material/chips';
     MatIconModule,
     MatMenuModule,
     MatCardModule,
-    MatChipsModule],
+    MatChipsModule,
+    AppRoutingModule],
     providers: [],
   bootstrap: [AppComponent]
 })
