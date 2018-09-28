@@ -8,13 +8,13 @@
           .fas {
             font-size: 50px;
             padding-left: 8px;
-            color: #06b306fa;
+            color: #444444;
             display: inline-block;
             width: 100px;
             height: 100px;
             line-height: 91px;
             text-align: center;
-            border: 5px solid #a0a2a4;
+            border: 5px solid #444444;
             padding: 0px;
             border-radius: 50%;
 
@@ -201,3 +201,7 @@
 }
 
 .padding_right0{padding-right: 0px}
+
+footer{background-color: $primary
+}
+
