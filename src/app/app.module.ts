@@ -10,6 +10,10 @@ import {MatCardModule} from '@angular/material/card';
 import {MatChipsModule} from '@angular/material/chips';
 import { AppRoutingModule } from './/app-routing.module';
 import { GlobalComponent } from './global/global.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import {FormsModule , ReactiveFormsModule } from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +27,14 @@ import { GlobalComponent } from './global/global.component';
     MatMenuModule,
     MatCardModule,
     MatChipsModule,
-    AppRoutingModule],
+    AppRoutingModule,
+    MatDialogModule,
+    FormsModule,
+    MatButtonModule,
+
+    ReactiveFormsModule
+  ],
+  exports: [],
     providers: [],
   bootstrap: [AppComponent]
 })

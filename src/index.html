@@ -38,5 +38,20 @@
         header.classList.remove("sticky");
       }
     }
-    </script>
+   $(document).ready(function () {
+     Webflow.push(function() {
+       $('.menu-button-class').click(function(e) {
+         e.preventDefault();
+         $('body').css('overflow', 'hidden');
+       });
+
+       $('.menu-class-name').click(function(e) {
+         e.preventDefault();
+         $('body').css('overflow', 'auto');
+       });
+     });
+   })
+
+</script>
+
 </html>
