@@ -13,11 +13,15 @@ import { GlobalComponent } from './global/global.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {FormsModule , ReactiveFormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
+import { AboutusComponent } from './global/aboutus/aboutus.component';
+import { ContactusComponent } from './global/contactus/contactus.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GlobalComponent
+    GlobalComponent,
+    AboutusComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,

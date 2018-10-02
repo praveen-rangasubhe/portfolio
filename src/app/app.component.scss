@@ -201,6 +201,36 @@
 
 .padding_right0{padding-right: 0px}
 
-footer{background-color: $primary
+footer{background-color: $primary;    padding: 0 15px 0 15px;
 }
 
+.map{iframe{    padding: 15px 15px 0px 15px;}
+  display: inline-block;width: 100%;
+
+}
+.footer_contact{color: #fff;    p{font-size: 13px;}
+  .gmail{color: #f17901;float: right;}
+  hr {
+    border: 0;
+    border-top: 1px solid #fff;
+    margin: 12px 0;
+  }
+  .fab {
+    padding: 0px 25px 0 0;
+    font-size: 20px;
+    &:hover{color:#f17901;cursor: pointer}
+  }
+  .text-copyright {
+    margin: 14px 0 0 0;color:#f17901;
+  }
+  .design{position: relative;}
+  b{
+    top: 11px;
+    font-weight: bolder;
+    position: absolute;
+    right: 0px;
+    font-size: 12px;
+    color: #f17901;
+   a{ text-decoration: underline;}
+  }
+}
