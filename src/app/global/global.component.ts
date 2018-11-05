@@ -9,9 +9,6 @@ export class GlobalComponent implements OnInit {
   awards = '';
 
   constructor() { }
-
-
-
   ngOnInit() {
   }
   viewOne() {
@@ -31,6 +28,32 @@ export class GlobalComponent implements OnInit {
   }
   viewSix() {
     this.awards = '../../assets/Award6.jpg';
+  }
+
+}
+
+
+@Component({
+  selector: 'app-slider',
+  templateUrl: './slider.component.html',
+  styleUrls: ['./global.component.scss']
+})
+export class SliderComponent implements  OnInit {
+  constructor() {}
+
+  ngOnInit(): void {
+  }
+
+}
+@Component({
+  selector: 'app-right',
+  templateUrl: './right.component.html',
+  styleUrls: ['./global.component.scss']
+})
+export class RightComponent implements  OnInit {
+  constructor() {}
+
+  ngOnInit(): void {
   }
 
 }

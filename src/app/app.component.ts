@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component  } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'BDNA';
+  public show: boolean = true;
+  // public buttonName: any = 'Show';
+
+
+  toggle() {
+    this.show = false;
+  }
+// home
+  toggle1() {
+    this.show = true;
+  }
+
+
 }
 

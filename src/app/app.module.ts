@@ -13,15 +13,31 @@ import { GlobalComponent } from './global/global.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {FormsModule , ReactiveFormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
-import { AboutusComponent } from './global/aboutus/aboutus.component';
-import { ContactusComponent } from './global/contactus/contactus.component';
+import {SliderComponent} from './global/global.component';
+import {RightComponent} from './global/global.component';
+import { CircularComponent } from './circular/circular.component';
+import { ActRuleComponent } from './act-rule/act-rule.component';
+import { MemberlistComponent } from './memberlist/memberlist.component';
+import { PhotogalleryComponent } from './photogallery/photogallery.component';
+import { HomeComponent } from './home/home.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ContactComponent } from './contact/contact.component';
+import { AbnapComponent } from './abnap/abnap.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GlobalComponent,
+    SliderComponent,
+    CircularComponent,
+    ActRuleComponent,
+    MemberlistComponent,
+    PhotogalleryComponent,
+    HomeComponent,
+    RightComponent,
     AboutusComponent,
-    ContactusComponent
+    ContactComponent,
+    AbnapComponent
   ],
   imports: [
     BrowserModule,

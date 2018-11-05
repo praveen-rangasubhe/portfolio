@@ -1,40 +1,41 @@
 //Variable
- $primary:#444444;
-
+ $primary:rgba(83, 83, 83, 0.8);
+$font-family: 'Noto Sans', sans-serif !important;
+//top-container
 .top-container{
-.navbar{background-color: #f0f0f0;      padding: 5px 15px 5px 13px;z-index: 4;
-
-        .bdna_brand {padding-left: 15px;
+    .navbar{
+       background-color: #0abe51;
+       padding: 5px 15px 5px 13px;z-index: 4;
+       .bdna_brand {    padding-left: 55px;
           .fas {
             font-size: 50px;
             padding-left: 8px;
-            color: #444444;
+            color: #fff;
             display: inline-block;
             width: 100px;
             height: 100px;
             line-height: 91px;
             text-align: center;
-            border: 5px solid #444444;
+            border: 5px solid #fff;
             padding: 0px;
             border-radius: 50%;
-
           }
           }
          h1 {
            font-size: 19px;
            line-height: 28px;
            font-weight: 900;
-           text-align: center;
-           a{color: #333;text-decoration: none;}
-        }
+           text-align: center;color: #fff;
+           a{color: #fff;text-decoration: none;}
+         }
         .social_icons {
           text-align: right;
-
-            .fab {
+          .fab {
                 padding: 0 2px 0 15px;
                 font-size: 33px;
                 cursor: pointer;
                 display: inline;
+             color:#fff;
                 &:hover{color:rgb(245, 146, 17)}
             }
         }
@@ -48,33 +49,29 @@
       text-align: right;
       margin: 0px 3px 0px 0px;
       line-height: 39px;
-    }}
+       color: #fff;
+    }
+  }
     }
 }
+
+
 .header {
-    //padding: 10px 16px;
-  //height: 40px;
-    background: $primary;
+  background: rgba(83, 83, 83, 0.8);
     color: #f1f1f1;
     z-index: 9;
-  .list-inline {
-    margin-left: 75px;    margin-bottom: 0px;
-  .list-inline-item{
-    button {
-    background-color: transparent;
-    border: 0;    font-size: 15px;
-      color: #fff;line-height: 38px;
-    cursor: pointer;
-      text-transform: uppercase;
-      &:hover{cursor: pointer !important;
-      background-color: #fff; color: #333!important;
-      }
+
+  ul{margin: 0px}
+  .dropdown {
+
+    padding: 15px 0px 20px 0px;
+    .dropdown-menu{margin: 0px;padding: 0px;border-radius: 0;
+      .dropdown-item{cursor: pointer}
+    }
   }
-  }
-  .list-inline-item:not(:last-child) {
-    margin-right: 10px;
-  }
-}
+
+  .dropdown-item:hover{background-color: #0abe51;color:#fff;}
+  .btn-secondary{background-color: transparent;border-color: transparent;font-size: 20px; font-weight: 500}
 }
 .sticky {
     position: fixed;
@@ -93,111 +90,7 @@
 
 
 
-.main_section {
-  margin: 0px 0 0 0;
-  background-color: #f0f0f0;
-  padding: 35px 0 15px 0;
-  .card {
-    max-width: 100%;
-  }
 
-  .card-image {
-    background-size: cover;
-    background: #dedede;
-    text-align: center;
-    line-height: 42px;
-    cursor: pointer;
-    &:hover{background-color:#004D40; color: #fff;}
-  }
-
-  .mat-card-avatar {
-    height: 125px;
-    width: 125px;
-    border-radius: 50%;
-    flex-shrink: 0;
-    .fas {
-      font-weight: 900;
-      font-size: 64px;
-      line-height: 121px;
-    }
-
-  }
-  .mat-card-image {
-    margin: 28px -24px 16px -24px;
-  }
-  .mat-card-title {
-    font-size: 14px;
-    text-align: left;
-    margin-top: 30px;
-    font-weight: 600;
-    word-spacing: -2px;
-    letter-spacing: 0.5px;
-  }
-}
-
-.help {
-  margin: 15px 0 10px 0;
-  min-height: 600px;
-  //box-shadow: 4px 2px 21px #cccc;
- .left{
-   background-color: #fff; min-height: 800px;  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
- h1{    background-color: #444444;
-   color: #fff;
-   font-size: 20px;
-   text-align: center;
-   line-height: 32px;
-}
-
-   span {
-     display: inline-block;
-     padding: 0 0 0 15px;
- }
-
-   .enquiry {
-     margin: 0 0 8px 0;
-   }
- //::ng-deep  .mat-chip-list-wrapper {
- //    margin: 1px 0 5px 0;
- //  }
-   .menu {
-     padding: 5px 18px 5px 18px;
-
-   }
-   .member {
-     padding: 5px 18px 14px 18px;
-   }
-.mat-standard-chip {
-
-     display: inline-block;
-     width: 100%;
-     cursor: pointer;
-   }
-  h4 {
-     text-align: center;
-     display: inline-block;
-     width: 100%;
-     margin-top: 40px;
-     font-size: 18px;
-   }
- }
-  marquee{background-color: #444444;
-    color: #fff;
-    font-size: 15px;
-    text-align: center;
-    line-height: 32px;
-  }
- .right{background-color:#fff;padding: 0 0 25px 0; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-   .detail {
-     padding: 0 21px 0 22px;
-     text-align: justify;
-     font-size: 16px;
-     color: #000000;
-     line-height: 24px;
-   }
-
- }
-
-}
 
 .padding_right0{padding-right: 0px}
 
@@ -208,29 +101,48 @@ footer{background-color: $primary;    padding: 0 15px 0 15px;
   display: inline-block;width: 100%;
 
 }
-.footer_contact{color: #fff;    p{font-size: 13px;}
-  .gmail{color: #f17901;float: right;}
-  hr {
-    border: 0;
-    border-top: 1px solid #fff;
-    margin: 12px 0;
+
+footer{
+    h5{
+      font-size: 17px;
+      color: #fff;
+      font-weight: 500;
+      line-height: 20px;
+      font-family: $font-family;
+    }
+  li{color: #fff;}
+p{     font-size: 15px;
+  color: #fff;
+  line-height: 24px;
+font-family: $font-family}
+  .fa.fa-mobile {
+    color: #fff;
+    font-size: 16px;
+    padding-right: 5px;
+    vertical-align: middle;
   }
-  .fab {
-    padding: 0px 25px 0 0;
-    font-size: 20px;
-    &:hover{color:#f17901;cursor: pointer}
+  a{
+    color: #fff;
+    line-height: 30px;
+    font-size: 14px;font-family: $font-family;
+    &:hover{
+      color: #ffa100;
+      text-decoration: none;
+
+    }
+
   }
-  .text-copyright {
-    margin: 14px 0 0 0;color:#f17901;
+  .fa-envelope {
+    color: #fff;
+    line-height: 40px;
+    padding-right: 8px;
+    vertical-align: middle;
   }
-  .design{position: relative;}
-  b{
-    top: 11px;
-    font-weight: bolder;
-    position: absolute;
-    right: 0px;
-    font-size: 12px;
-    color: #f17901;
-   a{ text-decoration: underline;}
-  }
-}
+
+.fab {
+  padding: 0px 20px 0 15px;
+  font-size: 35px;
+  color: #fff;
+  &:hover{color:#f17901;cursor: pointer}
+}}
+

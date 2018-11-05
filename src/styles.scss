@@ -4,7 +4,8 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
-body{font-family: 'Noto Sans', sans-serif;}
+body{font-family: 'Noto Sans', sans-serif !important;}
+html{font-family: 'Noto Sans', sans-serif !important;}
 
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
@@ -19,8 +20,8 @@ body{font-family: 'Noto Sans', sans-serif;}
 
   /* Declare heights because of positioning of img element */
   .carousel-item {
-    height: 32rem;
-    background-color: #777;
+    height: 350px;
+    background-color: #fff;
 
    .btn-primary{background-color: #444444;border: 0;}
   }
@@ -33,5 +34,123 @@ body{font-family: 'Noto Sans', sans-serif;}
     max-width: 100%;
 
 }
+.carousel-indicators{display: none;}
+.carousel-indicators .active {
+  background-color: transparent;
 
+}
 
+.padding0{padding:0px}
+
+//Variable
+$primary:rgba(83, 83, 83, 0.8);
+$font-family: 'Noto Sans', sans-serif !important;
+.main_section {
+  margin: 0px 0 0 0;
+  padding: 35px 0 15px 0;
+  .card {
+    max-width: 100%;
+  }
+
+  .card-image {
+    background-size: cover;
+    background: #dedede;
+    text-align: center;
+    line-height: 42px;
+    cursor: pointer;
+    &:hover{background-color:#004D40; color: #fff;}
+  }
+
+  .mat-card-avatar {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    .fas {
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 72px;
+    }
+
+  }
+  .mat-card-image {
+    margin: 28px -24px 16px -24px;
+  }
+  .mat-card-title {
+    font-size: 14px;
+    text-align: left;
+    position: relative;
+    top: 16px;
+    font-weight: 600;
+    word-spacing: -2px;
+    letter-spacing: 0.5px;
+  }
+}
+
+.help {
+  margin: 50px 0 10px 0;
+  min-height: 600px;
+  //box-shadow: 4px 2px 21px #cccc;
+  .left{
+    background-color: #fff; min-height: 800px;  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    h1{    background-color: #0abe51;
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+      line-height: 32px;
+      margin: 0px;
+    }
+
+    span {
+      display: inline-block;
+      padding: 0 0 0 15px;
+    }
+
+    .enquiry {
+      margin: 15px 0 15px 0;
+      b{line-height: 35px;
+        color: #333;
+        font-size: 16px;font-family: $primary}
+    }
+    //::ng-deep  .mat-chip-list-wrapper {
+    //    margin: 1px 0 5px 0;
+    //  }
+    .menu {
+      padding: 24px 18px 25px 18px;
+
+    }
+    .member {
+      padding: 25px 18px 25px 18px;
+    }
+    .mat-standard-chip {
+      margin-top: 10px;
+      display: inline-block;
+      width: 100%;
+      cursor: pointer;
+    }
+    h4 {
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  }
+  marquee{background-color:#0abe51;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    line-height: 32px;
+  }
+  .right{background-color:red;padding: 0 0 25px 0; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    .detail {
+      padding: 15px 21px 0 22px;
+      text-align: justify;
+      font-size: 16px;
+      color: #000000;
+      line-height: 24px;
+    }
+
+  }
+
+}
