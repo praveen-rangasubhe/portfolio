@@ -71,7 +71,7 @@ $font-family: 'Noto Sans', sans-serif !important;
   }
 
   .dropdown-item:hover{background-color: #0abe51;color:#fff;}
-  .btn-secondary{background-color: transparent;border-color: transparent;font-size: 20px; font-weight: 500}
+  .btn-secondary{background-color: transparent;border-color: transparent;font-size: 17px; font-weight: 500}
 }
 .sticky {
     position: fixed;
@@ -102,47 +102,5 @@ footer{background-color: $primary;    padding: 0 15px 0 15px;
 
 }
 
-footer{
-    h5{
-      font-size: 17px;
-      color: #fff;
-      font-weight: 500;
-      line-height: 20px;
-      font-family: $font-family;
-    }
-  li{color: #fff;}
-p{     font-size: 15px;
-  color: #fff;
-  line-height: 24px;
-font-family: $font-family}
-  .fa.fa-mobile {
-    color: #fff;
-    font-size: 16px;
-    padding-right: 5px;
-    vertical-align: middle;
-  }
-  a{
-    color: #fff;
-    line-height: 30px;
-    font-size: 14px;font-family: $font-family;
-    &:hover{
-      color: #ffa100;
-      text-decoration: none;
 
-    }
-
-  }
-  .fa-envelope {
-    color: #fff;
-    line-height: 40px;
-    padding-right: 8px;
-    vertical-align: middle;
-  }
-
-.fab {
-  padding: 0px 20px 0 15px;
-  font-size: 35px;
-  color: #fff;
-  &:hover{color:#f17901;cursor: pointer}
-}}
 

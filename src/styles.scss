@@ -51,7 +51,6 @@ $font-family: 'Noto Sans', sans-serif !important;
   .card {
     max-width: 100%;
   }
-
   .card-image {
     background-size: cover;
     background: #dedede;
@@ -73,84 +72,78 @@ $font-family: 'Noto Sans', sans-serif !important;
     }
 
   }
-  .mat-card-image {
-    margin: 28px -24px 16px -24px;
-  }
-  .mat-card-title {
-    font-size: 14px;
-    text-align: left;
-    position: relative;
-    top: 16px;
-    font-weight: 600;
-    word-spacing: -2px;
-    letter-spacing: 0.5px;
-  }
-}
 
-.help {
-  margin: 50px 0 10px 0;
-  min-height: 600px;
-  //box-shadow: 4px 2px 21px #cccc;
-  .left{
-    background-color: #fff; min-height: 800px;  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    h1{    background-color: #0abe51;
+  .help {
+    margin: 50px 0 10px 0;
+    min-height: 600px;
+    //box-shadow: 4px 2px 21px #cccc;
+
+    marquee{background-color: #757575;
       color: #fff;
       font-size: 20px;
       text-align: center;
-      line-height: 32px;
-      margin: 0px;
+      line-height: 31px;
+      border-bottom: 10px solid #0abe51;
+      border-radius: 5px;
     }
+    .right{padding: 0 0 25px 0; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      .detail {
+        padding: 15px 21px 0 22px;
+        text-align: justify;
+        font-size: 16px;
+        color: #000000;
+        line-height: 24px;
+        p{font-size: 13px;}
+      }
 
-    span {
-      display: inline-block;
-      padding: 0 0 0 15px;
-    }
-
-    .enquiry {
-      margin: 15px 0 15px 0;
-      b{line-height: 35px;
-        color: #333;
-        font-size: 16px;font-family: $primary}
-    }
-    //::ng-deep  .mat-chip-list-wrapper {
-    //    margin: 1px 0 5px 0;
-    //  }
-    .menu {
-      padding: 24px 18px 25px 18px;
-
-    }
-    .member {
-      padding: 25px 18px 25px 18px;
-    }
-    .mat-standard-chip {
-      margin-top: 10px;
-      display: inline-block;
-      width: 100%;
-      cursor: pointer;
-    }
-    h4 {
-      text-align: center;
-      display: inline-block;
-      width: 100%;
-      margin-top: 20px;
-      font-size: 18px;
-    }
-  }
-  marquee{background-color:#0abe51;
-    color: #fff;
-    font-size: 15px;
-    text-align: center;
-    line-height: 32px;
-  }
-  .right{background-color:red;padding: 0 0 25px 0; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    .detail {
-      padding: 15px 21px 0 22px;
-      text-align: justify;
-      font-size: 16px;
-      color: #000000;
-      line-height: 24px;
     }
 
   }
-
 }
+
+
+
+//footer
+footer{
+  h5{
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: $font-family;
+  }
+  li{color: #fff;}
+  p{     font-size: 15px;
+    color: #fff;
+    line-height: 24px;
+    font-family: $font-family}
+  .fa.fa-mobile {
+    color: #fff;
+    font-size: 16px;
+    padding-right: 5px;
+    vertical-align: middle;
+  }
+  a{
+    color: #fff;
+    line-height: 30px;
+    font-size: 14px;font-family: $font-family;
+    &:hover{
+      color: #ffa100;
+      text-decoration: none;
+
+    }
+
+  }
+  .fa-envelope {
+    color: #fff;
+    line-height: 40px;
+    padding-right: 8px;
+    vertical-align: middle;
+  }
+
+  .fab {
+    padding: 0px 20px 0 15px;
+    font-size: 35px;
+    color: #fff;
+    &:hover{color:#f17901;cursor: pointer}
+  }}

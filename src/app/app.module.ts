@@ -23,6 +23,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactComponent } from './contact/contact.component';
 import { AbnapComponent } from './abnap/abnap.component';
+import {ApComponent} from './abnap/abnap.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { AbnapComponent } from './abnap/abnap.component';
     RightComponent,
     AboutusComponent,
     ContactComponent,
-    AbnapComponent
+    AbnapComponent,
+    ApComponent
   ],
   imports: [
     BrowserModule,

@@ -33,14 +33,29 @@
       <li class="list-inline-item">
         <div class="dropdown">
           <button (click)="toggle1()" [routerLink]="['/']" class="btn btn-secondary" type="button" >
-         Home
+            HOME
           </button>
         </div>
       </li>
       <li class="list-inline-item">
         <div class="dropdown">
-          <button [routerLink]="['/aboutus']"  class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             About Us
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            ABOUT US
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button [routerLink]="['/aboutus']"   class="dropdown-item" type="button"> ABOUT US</button>
+            <button class="dropdown-item" type="button">ELECTED REPRESENTATIVE</button>
+            <button class="dropdown-item" type="button">LEGAL ADVISOR</button>
+            <button class="dropdown-item" type="button">GAZETTED OFFICER</button>
+            <button class="dropdown-item" type="button">STAFF</button>
+          </div>
+        </div>
+
+      </li>
+      <li class="list-inline-item">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            CIRCULARS
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
             <button class="dropdown-item" type="button">Action</button>
@@ -53,7 +68,7 @@
       <li class="list-inline-item">
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Circulars
+            ACT AND RULES
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
             <button class="dropdown-item" type="button">Action</button>
@@ -66,20 +81,7 @@
       <li class="list-inline-item">
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Act & Rules
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <button class="dropdown-item" type="button">Action</button>
-            <button class="dropdown-item" type="button">Another action</button>
-            <button class="dropdown-item" type="button">Something else here</button>
-          </div>
-        </div>
-
-      </li>
-      <li class="list-inline-item">
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Achievements
+            ACHIEVEMENTS
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
             <button class="dropdown-item" type="button">Action</button>
@@ -91,12 +93,16 @@
       <li class="list-inline-item">
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Members List
+            MEMBERS LIST
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <button class="dropdown-item" type="button">Action</button>
-            <button class="dropdown-item" type="button">Another action</button>
-            <button class="dropdown-item" type="button">Something else here</button>
+            <button class="dropdown-item" type="button">BAGALKOT TALUK</button>
+            <button class="dropdown-item" type="button">BILAGI TALUK</button>
+            <button class="dropdown-item" type="button">HUNAGUNDA TALUK</button>
+            <button class="dropdown-item" type="button">ILAKAL TALUK</button>
+            <button class="dropdown-item" type="button">BADAMI TALUK</button>
+            <button class="dropdown-item" type="button">MUDHOL TALUK</button>
+            <button class="dropdown-item" type="button">JAMAKHANDI TALUK</button>
           </div>
         </div>
 
@@ -105,7 +111,7 @@
       <li class="list-inline-item">
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            ABN & EP
+            ABN AND EP
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
             <button (click)="toggle()" [routerLink]="['/abnap']" class="dropdown-item" type="button">ABN</button>
@@ -116,14 +122,9 @@
       </li>
       <li class="list-inline-item">
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Photo Gallery
+          <button [routerLink]="['/photogallery']" class="btn btn-secondary" type="button">
+            PHOTO GALLERY
           </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <button class="dropdown-item" type="button">Action</button>
-            <button class="dropdown-item" type="button">Another action</button>
-            <button class="dropdown-item" type="button">Something else here</button>
-          </div>
         </div>
 
 
@@ -131,7 +132,7 @@
       <li class="list-inline-item">
         <div class="dropdown" >
           <button  [routerLink]="['/contact']" class="btn btn-secondary " type="button">
-           Contact Us
+            CONTACT US
           </button>
         </div>
 
