@@ -43,25 +43,17 @@
             ABOUT US
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <button [routerLink]="['/aboutus']"   class="dropdown-item" type="button"> ABOUT US</button>
-            <button class="dropdown-item" type="button">ELECTED REPRESENTATIVE</button>
-            <button class="dropdown-item" type="button">LEGAL ADVISOR</button>
-            <button class="dropdown-item" type="button">GAZETTED OFFICER</button>
-            <button class="dropdown-item" type="button">STAFF</button>
+            <button [routerLink]="['/']"   class="dropdown-item" type="button"> ABOUT US</button>
+            <button [routerLink]="['/aboutus']" class="dropdown-item" type="button">BOARD OF DIRECTORS</button>
           </div>
         </div>
 
       </li>
       <li class="list-inline-item">
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button [routerLink]="['/cicular']"  class="btn btn-secondary" type="button">
             CIRCULARS
           </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <button class="dropdown-item" type="button">Action</button>
-            <button class="dropdown-item" type="button">Another action</button>
-            <button class="dropdown-item" type="button">Something else here</button>
-          </div>
         </div>
 
       </li>
@@ -80,14 +72,9 @@
       </li>
       <li class="list-inline-item">
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button  routerLink="achievement" class="btn btn-secondary" type="button" >
             ACHIEVEMENTS
           </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <button class="dropdown-item" type="button">Action</button>
-            <button class="dropdown-item" type="button">Another action</button>
-            <button class="dropdown-item" type="button">Something else here</button>
-          </div>
         </div>
       </li>
       <li class="list-inline-item">
@@ -96,7 +83,7 @@
             MEMBERS LIST
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <button class="dropdown-item" type="button">BAGALKOT TALUK</button>
+            <button routerLink="/blk" class="dropdown-item" type="button">BAGALKOT TALUK</button>
             <button class="dropdown-item" type="button">BILAGI TALUK</button>
             <button class="dropdown-item" type="button">HUNAGUNDA TALUK</button>
             <button class="dropdown-item" type="button">ILAKAL TALUK</button>
@@ -106,7 +93,6 @@
           </div>
         </div>
 
-
       </li>
       <li class="list-inline-item">
         <div class="dropdown">
@@ -114,8 +100,8 @@
             ABN AND EP
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <button (click)="toggle()" [routerLink]="['/abnap']" class="dropdown-item" type="button">ABN</button>
-            <button class="dropdown-item" type="button">EP</button>
+            <button (click)="toggle()" [routerLink]="['/abn']" class="dropdown-item" type="button">ABN</button>
+            <button class="dropdown-item" [routerLink]="['/ep']" type="button">EP</button>
           </div>
         </div>
 

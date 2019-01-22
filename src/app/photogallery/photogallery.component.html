@@ -1,69 +1,122 @@
-<div class="container">
+<div class="container-fluid">
 
   <h1 class="my-4 text-center text-lg-left">Photo Gallery</h1>
 
-  <div class="row text-center text-lg-left">
 
-    <div class="col-lg-3 col-md-4 col-xs-6">
-      <a href="#" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-      </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-xs-6">
-      <a href="#" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-      </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-xs-6">
-      <a href="#" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-      </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-xs-6">
-      <a href="#" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-      </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-xs-6">
-      <a href="#" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-      </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-xs-6">
-      <a href="#" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-      </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-xs-6">
-      <a href="#" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-      </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-xs-6">
-      <a href="#" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-      </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-xs-6">
-      <a href="#" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-      </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-xs-6">
-      <a href="#" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-      </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-xs-6">
-      <a href="#" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-      </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-xs-6">
-      <a href="#" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="">
-      </a>
-    </div>
-  </div>
+  <mat-accordion>
+    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" >
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Independence day
+        </mat-panel-title>
+        <mat-panel-description>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div clas="container-fluid">
+      <div class="row">
+        <div class="col">
+          <a href="#" class="d-block mb-3 h-100">
+            <img class="img-fluid img-thumbnail" src="../../assets/banner2.jpg" alt="">
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="d-block mb-3 h-100">
+            <img class="img-fluid img-thumbnail" src="../../assets/banner1.jpg" alt="">
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="d-block mb-3 h-100">
+            <img class="img-fluid img-thumbnail" src="../../assets/banner2.jpg" alt="">
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="d-block mb-3 h-100">
+            <img class="img-fluid img-thumbnail" src="../../assets/banner1.jpg" alt="">
+          </a>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col">
+            <a href="#" class="d-block mb-3 h-100">
+              <img class="img-fluid img-thumbnail" src="../../assets/banner2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="d-block mb-3 h-100">
+              <img class="img-fluid img-thumbnail" src="../../assets/banner1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="d-block mb-3 h-100">
+              <img class="img-fluid img-thumbnail" src="../../assets/banner2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="d-block mb-3 h-100">
+              <img class="img-fluid img-thumbnail" src="../../assets/banner1.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel><mat-expansion-panel-header>
+        <mat-panel-title>
+          Independence day
+        </mat-panel-title>
+        <mat-panel-description>
+
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div clas="container-fluid">
+        <div class="row">
+          <div class="col">
+            <a href="#" class="d-block mb-3 h-100">
+              <img class="img-fluid img-thumbnail" src="../../assets/banner2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="d-block mb-3 h-100">
+              <img class="img-fluid img-thumbnail" src="../../assets/banner1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="d-block mb-3 h-100">
+              <img class="img-fluid img-thumbnail" src="../../assets/banner2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="d-block mb-3 h-100">
+              <img class="img-fluid img-thumbnail" src="../../assets/banner1.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <a href="#" class="d-block mb-3 h-100">
+              <img class="img-fluid img-thumbnail" src="../../assets/banner2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="d-block mb-3 h-100">
+              <img class="img-fluid img-thumbnail" src="../../assets/banner1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="d-block mb-3 h-100">
+              <img class="img-fluid img-thumbnail" src="../../assets/banner2.jpg" alt="">
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="d-block mb-3 h-100">
+              <img class="img-fluid img-thumbnail" src="../../assets/banner1.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+
 
 </div>

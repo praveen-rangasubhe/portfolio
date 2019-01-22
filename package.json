@@ -24,6 +24,8 @@
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
     "core-js": "^2.5.4",
+    "js-to-ts-converter": "^0.16.2",
+    "mylib": "^0.1.4",
     "rxjs": "^6.0.0",
     "zone.js": "~0.8.26"
   },

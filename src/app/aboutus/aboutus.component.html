@@ -1,51 +1,54 @@
 <div class="main_section">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <mat-card class="card">
-          <mat-card-header>
-            <div mat-card-avatar class="card-image">
-              <i class="fas fa-calculator"></i>
-            </div>
-            <mat-card-title> EXECUTION PETITION (EP) CALCULATOR</mat-card-title>
-          </mat-card-header>
-        </mat-card>
-      </div>
-      <div class="col">
-        <mat-card class="card">
-          <mat-card-header>
-            <div mat-card-avatar class="card-image">
-              <i class="fas fa-desktop"></i>
-            </div>
-            <mat-card-title>CITIZEN ONLINE SERVICES </mat-card-title>
-          </mat-card-header>
-        </mat-card>
-      </div>
-      <div class="col">
-        <mat-card class="card">
-          <mat-card-header>
-            <div mat-card-avatar class="card-image">
-              <i class="fas fa-hand-point-up"></i>
-            </div>
-            <mat-card-title>TRACK YOUR APPLICATION</mat-card-title>
-          </mat-card-header>
-        </mat-card>
-      </div>
-    </div>
+  <div class="container-fluid">
     <div class="help">
       <div class="row">
-        <div class="col col-sm-4 col-md-4 col-lg-4">
+        <div class="col col-sm-3 col-md-3 col-lg-3">
           <app-right></app-right>
         </div>
-        <div class="col col-sm-8 col-md-8 col-lg-8">
+        <div class="col col-sm-9 col-md-9 col-lg-9">
           <div class="right">
             <marquee>BAGALKOT DISTRICT NON-AGRICULTURE CREDIT CO-OPERATIVE SOCIETIES FEDERATION LTD BAGALKOT</marquee>
             <div class="detail">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <table mat-table [dataSource] = "dataSource" class="mat-elevation-z8">
+                <!-- Position Column -->
+                <ng-container matColumnDef="position">
+                  <th mat-header-cell *matHeaderCellDef> No. </th>
+                  <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                </ng-container>
+
+                <!-- Name Column -->
+                <ng-container matColumnDef="name" >
+                  <th mat-header-cell *matHeaderCellDef> NAME </th>
+                  <td mat-cell *matCellDef="let element" class="name"> {{element.name}} </td>
+                </ng-container>
+
+                <!-- Weight Column -->
+                <ng-container matColumnDef="designation">
+                  <th mat-header-cell *matHeaderCellDef>DESIGNATION</th>
+                  <td mat-cell *matCellDef="let element"> {{element.designation}} </td>
+                </ng-container>
+
+                <!-- Symbol Column -->
+                <ng-container matColumnDef="address">
+                  <th mat-header-cell *matHeaderCellDef> ADDRESS </th>
+                  <td mat-cell *matCellDef="let element"> {{element.address}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="photo">
+                  <th mat-header-cell *matHeaderCellDef> PHOTO </th>
+                  <td mat-cell *matCellDef="let element"> 
+                  <div class="photo"><img src="../../assets/image.jpg"></div>
+                  </td>
+                </ng-container>
+
+                <ng-container matColumnDef="phone">
+                  <th mat-header-cell *matHeaderCellDef> PHONE </th>
+                  <td mat-cell *matCellDef="let element"> {{element.phone}} </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+              </table>
             </div>
           </div>
         </div>

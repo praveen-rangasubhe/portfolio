@@ -14,17 +14,4 @@ export class AbnapComponent implements OnInit {
 
 }
 
-@Component({
-  selector: 'app-ap',
-  templateUrl: './ap.component.html',
-  styleUrls: ['./abnap.component.scss']
-})
 
-export class ApComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}

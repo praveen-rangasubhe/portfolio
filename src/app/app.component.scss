@@ -4,12 +4,13 @@ $font-family: 'Noto Sans', sans-serif !important;
 //top-container
 .top-container{
     .navbar{
-       background-color: #0abe51;
+      background: linear-gradient(45deg, #1de099, #1dc8cd);
        padding: 5px 15px 5px 13px;z-index: 4;
        .bdna_brand {    padding-left: 55px;
           .fas {
             font-size: 50px;
             padding-left: 8px;
+            //color: rgba(83, 83, 83, 0.8);
             color: #fff;
             display: inline-block;
             width: 100px;
@@ -25,8 +26,8 @@ $font-family: 'Noto Sans', sans-serif !important;
            font-size: 19px;
            line-height: 28px;
            font-weight: 900;
-           text-align: center;color: #fff;
-           a{color: #fff;text-decoration: none;}
+           text-align: center;  color: #fff;
+           a{     color: #fff;text-decoration: none;}
          }
         .social_icons {
           text-align: right;
@@ -35,8 +36,8 @@ $font-family: 'Noto Sans', sans-serif !important;
                 font-size: 33px;
                 cursor: pointer;
                 display: inline;
-             color:#fff;
-                &:hover{color:rgb(245, 146, 17)}
+            color:#fff;
+                &:hover{color:#0abe51}
             }
         }
   .right_sec {
@@ -49,7 +50,7 @@ $font-family: 'Noto Sans', sans-serif !important;
       text-align: right;
       margin: 0px 3px 0px 0px;
       line-height: 39px;
-       color: #fff;
+      color: #fff;
     }
   }
     }
@@ -57,7 +58,8 @@ $font-family: 'Noto Sans', sans-serif !important;
 
 
 .header {
-  background: rgba(83, 83, 83, 0.8);
+  background: linear-gradient(45deg, #1de099, #1dc8cd);
+  border-top:1px solid #fff;
     color: #f1f1f1;
     z-index: 9;
 
@@ -70,7 +72,7 @@ $font-family: 'Noto Sans', sans-serif !important;
     }
   }
 
-  .dropdown-item:hover{background-color: #0abe51;color:#fff;}
+  .dropdown-item:hover{background: linear-gradient(45deg, #1de099, #1dc8cd);color:#fff;}
   .btn-secondary{background-color: transparent;border-color: transparent;font-size: 17px; font-weight: 500}
 }
 .sticky {
@@ -94,7 +96,7 @@ $font-family: 'Noto Sans', sans-serif !important;
 
 .padding_right0{padding-right: 0px}
 
-footer{background-color: $primary;    padding: 0 15px 0 15px;
+footer{   background: linear-gradient(45deg, #1de099, #1dc8cd);   padding: 0 15px 0 15px;
 }
 
 .map{iframe{    padding: 15px 15px 0px 15px;}
@@ -102,5 +104,9 @@ footer{background-color: $primary;    padding: 0 15px 0 15px;
 
 }
 
-
-
+ .show>.btn-secondary.dropdown-toggle:focus {
+  box-shadow: none !important;
+}
+.btn-secondary:focus {
+  box-shadow: none;
+}

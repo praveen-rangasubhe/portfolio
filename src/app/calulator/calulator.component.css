@@ -1,0 +1,81 @@
+body, body * {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container .inner {
+  flex-basis: 50%;
+}
+
+.container .inner  h2 {
+  font-size: 2.4rem;
+  margin: 2.4rem 0;
+  color: grey;
+}
+
+.container .inner .input-container {
+  width: 100%;
+  position: relative;
+}
+
+.container .inner  input {
+  width: 100%;
+  padding: 1rem;
+  box-shadow: inset 0em 0em 0.7rem 0rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.container .inner .input-container .close-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: grey;
+}
+
+.container .inner .input-container .close-icon:hover {
+  color: black;
+}
+
+.container .inner .calulation-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 1.8rem;
+}
+
+.container .inner .calulation-container > div.input-amount {
+  box-shadow: none;
+}
+.container .inner .calulation-container > div {
+  box-shadow: 0em 0em 0.2rem;
+  padding: 1rem 2rem;
+  color: #423a3ab5;
+  display: flex;
+}
+
+.container .inner .calulation-container > div > span:first-child {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.container .inner .calulation-container > div:hover {
+  background: #00000045;
+}
+
+.container .inner .calulation-container > div > span {
+  flex-basis: 50%;
+}
+.container .inner .calulation-container > div > span.val {
+  text-align: right;
+  flex-basis: 50%;
+  font-size: 1.6rem;
+  color: #000;
+}

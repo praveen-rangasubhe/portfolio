@@ -1,5 +1,5 @@
 import { Component  } from '@angular/core';
-
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +11,7 @@ export class AppComponent {
   public show: boolean = true;
   // public buttonName: any = 'Show';
 
+  constructor(private router: Router) {}
 
   toggle() {
     this.show = false;
@@ -19,6 +20,7 @@ export class AppComponent {
   toggle1() {
     this.show = true;
   }
+
 
 
 }

@@ -23,7 +23,14 @@ import { HomeComponent } from './home/home.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactComponent } from './contact/contact.component';
 import { AbnapComponent } from './abnap/abnap.component';
-import {ApComponent} from './abnap/abnap.component';
+
+
+import {MatTableModule} from '@angular/material';
+import { CalulatorComponent } from './calulator/calulator.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { EpComponent } from './abnap/ep/ep.component';
+import { AchievementComponent } from './achievement/achievement.component';
+import { BlkComponent } from './memberlist/blk/blk.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +46,10 @@ import {ApComponent} from './abnap/abnap.component';
     AboutusComponent,
     ContactComponent,
     AbnapComponent,
-    ApComponent
+    CalulatorComponent,
+    EpComponent,
+    AchievementComponent,
+    BlkComponent
   ],
   imports: [
     BrowserModule,
@@ -53,8 +63,9 @@ import {ApComponent} from './abnap/abnap.component';
     MatDialogModule,
     FormsModule,
     MatButtonModule,
-
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatTableModule,
+    MatExpansionModule
   ],
   exports: [],
     providers: [],
